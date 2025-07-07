@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { AlertTriangle, FileWarning, TrendingDown, Brain, Calculator, BookOpen, Scale } from 'lucide-react';
+import { AlertTriangle, TrendingDown, Calculator, BookOpen, Scale } from 'lucide-react';
 
 export default function ProblemSection() {
   return (

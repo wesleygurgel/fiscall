@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Shield, Search, FileCheck, DollarSign, BookOpen, ChevronDown, ChevronUp, MessageCircle, Lightbulb } from 'lucide-react';
+import { Shield, Search, FileCheck, DollarSign, BookOpen, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
 
 export default function ComplementaryServicesSection() {
   // State to track which accordion item is open

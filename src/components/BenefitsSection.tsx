@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FileCheck, BarChart3, TrendingUp, DollarSign, ShieldCheck } from 'lucide-react';
+import { FileCheck, TrendingUp, DollarSign } from 'lucide-react';
 
 export default function BenefitsSection() {
   return (
@@ -36,7 +36,7 @@ export default function BenefitsSection() {
                 <h3 className="text-2xl font-bold text-primary-700 mb-6">
                   Nossos diferenciais
                 </h3>
-                
+
                 <ul className="space-y-6">
                   {/* Benefit 1 */}
                   <motion.li 
@@ -55,7 +55,7 @@ export default function BenefitsSection() {
                       </p>
                     </div>
                   </motion.li>
-                  
+
                   {/* Benefit 2 */}
                   <motion.li 
                     className="flex items-start"
@@ -73,7 +73,7 @@ export default function BenefitsSection() {
                       </p>
                     </div>
                   </motion.li>
-                  
+
                   {/* Benefit 3 */}
                   <motion.li 
                     className="flex items-start"
@@ -91,7 +91,7 @@ export default function BenefitsSection() {
                       </p>
                     </div>
                   </motion.li>
-                  
+
                   {/* Benefit 4 */}
                   <motion.li 
                     className="flex items-start"
@@ -112,7 +112,7 @@ export default function BenefitsSection() {
                 </ul>
               </div>
             </motion.div>
-            
+
             {/* Right column - Chart visualization */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -123,12 +123,12 @@ export default function BenefitsSection() {
                 <h3 className="text-2xl font-bold text-primary-700 mb-6">
                   Valores recuperados
                 </h3>
-                
+
                 <div className="mb-8">
                   <p className="text-gray-600 mb-4">
                     Exemplos de valores recuperados por setor (em milhões de R$):
                   </p>
-                  
+
                   {/* Bar chart visualization */}
                   <div className="space-y-4">
                     {/* Industry 1 */}
@@ -151,7 +151,7 @@ export default function BenefitsSection() {
                         ></motion.div>
                       </motion.div>
                     </div>
-                    
+
                     {/* Industry 2 */}
                     <div>
                       <div className="flex justify-between mb-1">
@@ -172,7 +172,7 @@ export default function BenefitsSection() {
                         ></motion.div>
                       </motion.div>
                     </div>
-                    
+
                     {/* Industry 3 */}
                     <div>
                       <div className="flex justify-between mb-1">
@@ -193,7 +193,7 @@ export default function BenefitsSection() {
                         ></motion.div>
                       </motion.div>
                     </div>
-                    
+
                     {/* Industry 4 */}
                     <div>
                       <div className="flex justify-between mb-1">
@@ -216,7 +216,7 @@ export default function BenefitsSection() {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Stats */}
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="bg-primary-50 p-4 rounded-lg">
@@ -226,7 +226,7 @@ export default function BenefitsSection() {
                     </div>
                     <p className="text-sm text-gray-600">Aumento médio no fluxo de caixa</p>
                   </div>
-                  
+
                   <div className="bg-primary-50 p-4 rounded-lg">
                     <div className="flex items-center mb-2">
                       <DollarSign className="w-5 h-5 text-primary-600 mr-2" />

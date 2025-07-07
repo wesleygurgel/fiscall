@@ -53,7 +53,7 @@ export default function TestimonialsSection() {
 
   // Animation variants
   const slideVariants = {
-    enter: (direction) => ({
+    enter: (direction: number) => ({
       x: direction > 0 ? 1000 : -1000,
       opacity: 0
     }),
@@ -61,7 +61,7 @@ export default function TestimonialsSection() {
       x: 0,
       opacity: 1
     },
-    exit: (direction) => ({
+    exit: (direction: number) => ({
       x: direction < 0 ? 1000 : -1000,
       opacity: 0
     })
@@ -101,7 +101,7 @@ export default function TestimonialsSection() {
               <ChevronLeft className="w-6 h-6 text-primary-600" />
             </button>
           </div>
-          
+
           <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-6 z-10">
             <button 
               onClick={nextSlide}
@@ -133,7 +133,7 @@ export default function TestimonialsSection() {
                   <div className="absolute -top-6 left-8 bg-primary-600 p-3 rounded-full">
                     <Quote className="w-6 h-6 text-white" />
                   </div>
-                  
+
                   <div className="flex flex-col md:flex-row items-center gap-8">
                     {/* Avatar */}
                     <div className="flex-shrink-0">
@@ -148,13 +148,13 @@ export default function TestimonialsSection() {
                         />
                       </div>
                     </div>
-                    
+
                     {/* Content */}
                     <div className="flex-1">
                       <blockquote className="text-gray-700 italic mb-6 text-lg">
                         "{testimonials[currentIndex].quote}"
                       </blockquote>
-                      
+
                       <div className="flex flex-col">
                         <span className="font-bold text-primary-700 text-lg">{testimonials[currentIndex].name}</span>
                         <div className="flex items-center text-gray-600">
@@ -169,7 +169,7 @@ export default function TestimonialsSection() {
               </motion.div>
             </AnimatePresence>
           </div>
-          
+
           {/* Indicators */}
           <div className="flex justify-center mt-6 space-x-2">
             {testimonials.map((_, index) => (

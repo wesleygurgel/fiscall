@@ -1,10 +1,8 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Home, Info, Menu, X, BookOpen, Briefcase, Scale, Shield } from 'lucide-react';
+import { Home, Info, Menu, X, BookOpen, Scale, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 export default function Header() {
-  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -26,10 +24,10 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navItems = [
-    { path: '/', label: 'Home', icon: <Home className="w-5 h-5" /> },
-    { path: '/about', label: 'Quem Somos', icon: <Info className="w-5 h-5" /> },
-    { path: '/areas', label: 'Áreas de Atuação', icon: <Briefcase className="w-5 h-5" /> },
-    { path: '/blog', label: 'Blog', icon: <BookOpen className="w-5 h-5" /> },
+    { href: '#', label: 'Home', icon: <Home className="w-5 h-5" /> },
+    { href: '#about', label: 'Quem Somos', icon: <Info className="w-5 h-5" /> },
+    { href: '#solution', label: 'Nossa Solução', icon: <Scale className="w-5 h-5" /> },
+    { href: '#testimonials', label: 'Depoimentos', icon: <BookOpen className="w-5 h-5" /> },
   ];
 
   return (
@@ -45,7 +43,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <Link to="/" className="flex-shrink-0 flex items-center">
+              <a href="/" className="flex-shrink-0 flex items-center">
                 <div className="flex items-center">
                   <Scale className={`w-8 h-8 ${scrolled ? 'text-primary-600' : 'text-gold-400'} mr-2`} />
                   <div className="flex flex-col">
@@ -57,28 +55,24 @@ export default function Header() {
                     </span>
                   </div>
                 </div>
-              </Link>
+              </a>
             </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-1">
               {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
+                <a
+                  key={item.href}
+                  href={item.href}
                   className={`flex items-center px-4 py-2 rounded-md text-sm font-medium font-sans transition-all duration-200 ${
-                    location.pathname === item.path
-                      ? scrolled 
-                        ? 'bg-primary-50 text-primary-700' 
-                        : 'bg-white bg-opacity-10 text-white'
-                      : scrolled 
-                        ? 'text-gray-700 hover:bg-gray-100' 
-                        : 'text-white hover:bg-white hover:bg-opacity-10'
+                    scrolled 
+                      ? 'text-gray-700 hover:bg-gray-100' 
+                      : 'text-white hover:bg-white hover:bg-opacity-10'
                   }`}
                 >
                   {item.icon}
                   <span className="ml-2">{item.label}</span>
-                </Link>
+                </a>
               ))}
               <a 
                 href="#contact" 
@@ -123,19 +117,15 @@ export default function Header() {
           >
             <div className="px-4 pt-3 pb-4 space-y-2">
               {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`flex items-center px-4 py-3 rounded-md text-base font-medium font-sans ${
-                    location.pathname === item.path
-                      ? 'bg-primary-50 text-primary-700'
-                      : 'text-gray-700 hover:bg-gray-50'
-                  }`}
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="flex items-center px-4 py-3 rounded-md text-base font-medium font-sans text-gray-700 hover:bg-gray-50"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.icon}
                   <span className="ml-3">{item.label}</span>
-                </Link>
+                </a>
               ))}
               <a 
                 href="#contact" 

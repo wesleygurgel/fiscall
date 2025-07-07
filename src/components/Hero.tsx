@@ -58,10 +58,10 @@ export default function Hero() {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
                 <a 
-                  href="#services" 
+                  href="#solution" 
                   className="px-8 py-3.5 rounded-lg bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 transition-all duration-300"
                 >
-                  Nossos Serviços
+                  Nossas Soluções
                 </a>
               </motion.div>
 

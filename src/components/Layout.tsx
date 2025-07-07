@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Linkedin, Instagram } from 'lucide-react';
 import Header from './Header';
 
 interface LayoutProps {
@@ -17,41 +17,68 @@ export default function Layout({ children }: LayoutProps) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary-600 text-white py-8">
+      <footer className="bg-primary-800 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4 font-serif">FiscALL</h3>
-              <p className="text-sm text-gray-200">
+              <h3 className="text-xl font-bold mb-4 font-serif">FiscALL</h3>
+              <p className="text-sm text-gray-200 leading-relaxed">
                 Inteligência Tributária para otimizar seus processos fiscais e garantir conformidade legal.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4 font-sans">Contato</h3>
-              <p className="text-sm text-gray-200">
+              <h3 className="text-xl font-bold mb-4 font-sans">Contato</h3>
+              <p className="text-sm text-gray-200 leading-relaxed">
                 contato@fiscall.com.br<br />
-                +55 (11) 9999-9999
+                +55 (84) 98861-4565<br />
+                Av. Paulista, 1000 - São Paulo, SP
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4 font-sans">Siga-nos</h3>
+              <h3 className="text-xl font-bold mb-4 font-sans">Siga-nos</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-white hover:text-gold-300">LinkedIn</a>
-                <a href="#" className="text-white hover:text-gold-300">Instagram</a>
+                <a 
+                  href="https://www.linkedin.com/in/wesleygurgel/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary-700 hover:bg-primary-600 text-white p-2 rounded-full transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a 
+                  href="#" 
+                  className="bg-primary-700 hover:bg-primary-600 text-white p-2 rounded-full transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
               </div>
             </div>
           </div>
-          <div className="border-t border-primary-500 mt-8 pt-6">
-            <p className="text-center text-sm text-gray-300">
-              &copy; {new Date().getFullYear()} FiscALL - Inteligência Tributária. Todos os direitos reservados.
-            </p>
+          <div className="border-t border-primary-700 mt-8 pt-6">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-sm text-gray-300 mb-4 md:mb-0">
+                &copy; {new Date().getFullYear()} FiscALL - Inteligência Tributária. Todos os direitos reservados.
+              </p>
+              <p className="text-sm text-gray-300">
+                Desenvolvido por <a 
+                  href="https://www.linkedin.com/in/wesleygurgel/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gold-300 hover:text-gold-200 transition-colors"
+                >
+                  Wesley Gurgel
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </footer>
 
       {/* WhatsApp Button */}
       <a 
-        href="https://wa.me/5511999999999" 
+        href="https://wa.me/5584988614565" 
         target="_blank" 
         rel="noopener noreferrer"
         className="whatsapp-button"

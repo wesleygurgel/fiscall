@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
-import { BarChart3, Shield, FileText, TrendingUp, MessageCircle } from 'lucide-react';
+import { BarChart3, Shield, FileText, MessageCircle } from 'lucide-react';
 import Hero from '../components/Hero';
 import AboutSection from '../components/AboutSection';
+import ProblemSection from '../components/ProblemSection';
+import SolutionSection from '../components/SolutionSection';
+import RecoverableTaxesSection from '../components/RecoverableTaxesSection';
 
 export default function Home() {
   return (
@@ -11,6 +14,15 @@ export default function Home() {
 
       {/* About Section */}
       <AboutSection />
+
+      {/* Problem Section */}
+      <ProblemSection />
+
+      {/* Solution Section */}
+      <SolutionSection />
+
+      {/* Recoverable Taxes Section */}
+      <RecoverableTaxesSection />
 
       {/* Services Section */}
       <section id="services" className="py-16 bg-gray-50">

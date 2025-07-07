@@ -14,14 +14,6 @@ export default function AboutSection() {
           >
             Quem Somos
           </motion.h2>
-          <motion.p 
-            className="text-lg text-gray-600 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            Apresentação Institucional
-          </motion.p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -33,11 +25,20 @@ export default function AboutSection() {
           >
             <div className="bg-primary-50 p-8 rounded-lg border-l-4 border-primary-500 shadow-md">
               <h3 className="text-2xl font-bold text-primary-600 mb-4 font-serif">Breve histórico do escritório</h3>
-              <p className="text-gray-700 mb-6">
-                Formamos um escritório de advocacia especializado em Direito Tributário, com atuação focada na recuperação de tributos pagos indevidamente por empresas de diversos portes e setores econômicos. Nosso propósito é garantir que os contribuintes cumpram suas obrigações fiscais de forma justa e eficiente, evitando pagamentos excessivos e assegurando o pleno aproveitamento dos direitos creditórios previstos na legislação.
+
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Formamos um escritório de advocacia <span className="font-semibold text-primary-700">especializado em Direito Tributário</span>, com atuação focada na 
+                <span className="text-gold-600 font-medium"> recuperação de tributos pagos indevidamente</span> por empresas de diversos portes e setores econômicos.
               </p>
-              <p className="text-gray-700">
-                Com uma equipe altamente qualificada e atualizada quanto às constantes mudanças da legislação e jurisprudência tributária, atuamos com excelência técnica, ética e estratégia para identificar oportunidades legais de recuperação de créditos tributários, tanto na esfera administrativa quanto judicial.
+
+              <div className="bg-white bg-opacity-50 p-4 rounded-md mb-6 border-l-2 border-gold-400">
+                <p className="text-gray-800 italic">
+                  "Nosso propósito é garantir que os contribuintes cumpram suas obrigações fiscais de forma <span className="text-primary-600 font-medium">justa e eficiente</span>, evitando pagamentos excessivos e assegurando o pleno aproveitamento dos direitos creditórios previstos na legislação."
+                </p>
+              </div>
+
+              <p className="text-gray-700 leading-relaxed">
+                Com uma <span className="font-semibold">equipe altamente qualificada</span> e atualizada quanto às constantes mudanças da legislação e jurisprudência tributária, atuamos com <span className="text-primary-700 font-medium">excelência técnica</span>, <span className="text-primary-700 font-medium">ética</span> e <span className="text-primary-700 font-medium">estratégia</span> para identificar oportunidades legais de recuperação de créditos tributários, tanto na <span className="underline decoration-primary-400">esfera administrativa</span> quanto <span className="underline decoration-gold-400">judicial</span>.
               </p>
             </div>
           </motion.div>

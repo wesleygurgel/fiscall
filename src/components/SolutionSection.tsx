@@ -126,7 +126,14 @@ export default function SolutionSection() {
             Fale com nossos especialistas e descubra como podemos ajudar sua empresa a recuperar valores pagos indevidamente.
           </p>
           <a 
-            href="#contact" 
+            href="/#contact" 
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors shadow-md"
           >
             <MessageCircle className="w-5 h-5 mr-2" />

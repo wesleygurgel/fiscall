@@ -23,11 +23,20 @@ export default function Header() {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  // Function to handle smooth scrolling to sections
+  const scrollToSection = (sectionId: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navItems = [
-    { href: '#', label: 'Home', icon: <Home className="w-5 h-5" /> },
-    { href: '#about', label: 'Quem Somos', icon: <Info className="w-5 h-5" /> },
-    { href: '#solution', label: 'Nossa Solução', icon: <Scale className="w-5 h-5" /> },
-    { href: '#testimonials', label: 'Depoimentos', icon: <BookOpen className="w-5 h-5" /> },
+    { href: '/', label: 'Home', icon: <Home className="w-5 h-5" />, sectionId: '' },
+    { href: '/#about', label: 'Quem Somos', icon: <Info className="w-5 h-5" />, sectionId: 'about' },
+    { href: '/#solution', label: 'Nossa Solução', icon: <Scale className="w-5 h-5" />, sectionId: 'solution' },
+    { href: '/#testimonials', label: 'Depoimentos', icon: <BookOpen className="w-5 h-5" />, sectionId: 'testimonials' },
   ];
 
   return (
@@ -64,6 +73,7 @@ export default function Header() {
                 <a
                   key={item.href}
                   href={item.href}
+                  onClick={item.sectionId ? scrollToSection(item.sectionId) : undefined}
                   className={`flex items-center px-4 py-2 rounded-md text-sm font-medium font-sans transition-all duration-200 ${
                     scrolled 
                       ? 'text-gray-700 hover:bg-gray-100' 
@@ -75,7 +85,8 @@ export default function Header() {
                 </a>
               ))}
               <a 
-                href="#contact" 
+                href="/#contact" 
+                onClick={scrollToSection('contact')}
                 className={`ml-2 px-5 py-2.5 rounded-md text-sm font-medium transition-all duration-200 flex items-center ${
                   scrolled 
                     ? 'bg-primary-600 text-white hover:bg-primary-700' 
@@ -121,16 +132,24 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   className="flex items-center px-4 py-3 rounded-md text-base font-medium font-sans text-gray-700 hover:bg-gray-50"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => {
+                    if (item.sectionId) {
+                      scrollToSection(item.sectionId)(e);
+                    }
+                    setIsMenuOpen(false);
+                  }}
                 >
                   {item.icon}
                   <span className="ml-3">{item.label}</span>
                 </a>
               ))}
               <a 
-                href="#contact" 
+                href="/#contact" 
                 className="flex items-center justify-center px-4 py-3 rounded-md text-base font-medium bg-primary-600 text-white mt-2 font-sans hover:bg-primary-700 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  scrollToSection('contact')(e);
+                  setIsMenuOpen(false);
+                }}
               >
                 <Shield className="w-5 h-5 mr-2" />
                 Fale Conosco

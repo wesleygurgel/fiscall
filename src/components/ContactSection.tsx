@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Phone, Mail, Linkedin, Instagram, ExternalLink, MessageCircle } from 'lucide-react';
+import qrCodeImage from '../assets/images/frame.png';
 
 export default function ContactSection() {
   return (
@@ -146,7 +147,7 @@ export default function ContactSection() {
                     <div className="bg-white p-2 rounded-lg border border-gray-200 w-48 h-48 mx-auto">
                       {/* Fallback to a placeholder if the QR code image doesn't exist */}
                       <img 
-                        src="/src/assets/images/frame.png" 
+                        src={qrCodeImage} 
                         alt="QR Code para WhatsApp" 
                         className="w-full h-full"
                         onError={(e) => {

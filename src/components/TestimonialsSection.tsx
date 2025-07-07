@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 export default function TestimonialsSection() {
+
   // Testimonial data
   const testimonials = [
     {
@@ -139,12 +140,9 @@ export default function TestimonialsSection() {
                     <div className="flex-shrink-0">
                       <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary-100 shadow-md">
                         <img 
-                          src={`/src/assets/images/avatar-${testimonials[currentIndex].id}.jpg`} 
+                          src={`https://ui-avatars.com/api/?name=${encodeURIComponent(testimonials[currentIndex].name)}&background=1a365d&color=fff&size=128`}
                           alt={testimonials[currentIndex].name}
                           className="w-full h-full object-cover"
-                          onError={(e) => {
-                            e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(testimonials[currentIndex].name)}&background=1a365d&color=fff&size=128`;
-                          }}
                         />
                       </div>
                     </div>

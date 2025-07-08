@@ -60,7 +60,7 @@ export default function AboutSection() {
                 <div className="relative overflow-hidden rounded-2xl aspect-[4/3] w-full max-w-lg shadow-2xl hover:shadow-xl transition-shadow duration-300">
                   <img 
                     src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    alt="Escritório FiscALL" 
+                    alt="Escritório Câmara e Melo Advogados Associados" 
                     className="w-full h-full object-cover object-center rounded-2xl"
                   />
                 </div>

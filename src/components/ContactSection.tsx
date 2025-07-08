@@ -52,7 +52,7 @@ export default function ContactSection() {
                         <MessageCircle className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800 mb-1">FiscALL</h4>
+                        <h4 className="text-lg font-semibold text-gray-800 mb-1">Câmara e Melo Advogados Associados</h4>
                         <p className="text-gray-600">
                           Inteligência Tributária
                         </p>
@@ -90,7 +90,7 @@ export default function ContactSection() {
                       <div>
                         <h4 className="text-lg font-semibold text-gray-800 mb-1">E-mail</h4>
                         <p className="text-gray-600">
-                          contato@fiscall.com.br
+                          contato@cm.com.br
                         </p>
                       </div>
                     </motion.li>

@@ -60,11 +60,11 @@ export default function Header() {
                 <div className="flex items-center">
                   <Scale className={`w-8 h-8 ${scrolled ? 'text-primary-600' : 'text-gold-400'} mr-2`} />
                   <div className="flex flex-col">
-                    <span className={`text-2xl font-bold ${scrolled ? 'text-primary-600' : 'text-white'} font-serif tracking-tight`}>
-                      FiscALL
+                    <span className={`text-xl font-bold ${scrolled ? 'text-primary-600' : 'text-white'} font-serif tracking-tight`}>
+                      Câmara e Melo
                     </span>
                     <span className={`text-xs ${scrolled ? 'text-gold-500' : 'text-gold-300'} font-medium font-sans tracking-wider`}>
-                      Inteligência Tributária
+                      Advogados Associados
                     </span>
                   </div>
                 </div>

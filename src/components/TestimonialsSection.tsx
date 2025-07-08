@@ -11,21 +11,21 @@ export default function TestimonialsSection() {
       name: "Carla Mendes",
       position: "Diretora Financeira",
       company: "Grupo Orion Logística",
-      quote: "A FiscALL transformou nossa realidade tributária. Recuperamos mais de R$ 800 mil em créditos que estavam esquecidos. Atendimento impecável e seguro."
+      quote: "A Câmara e Melo Advogados Associados transformou nossa realidade tributária. Recuperamos mais de R$ 800 mil em créditos que estavam esquecidos. Atendimento impecável e seguro."
     },
     {
       id: 2,
       name: "Renato Silva",
       position: "CEO",
       company: "BioPharma Brasil",
-      quote: "Com a consultoria da FiscALL, além de recuperarmos valores expressivos de PIS/COFINS, passamos a ter um planejamento tributário muito mais estratégico."
+      quote: "Com a consultoria da Câmara e Melo Advogados Associados, além de recuperarmos valores expressivos de PIS/COFINS, passamos a ter um planejamento tributário muito mais estratégico."
     },
     {
       id: 3,
       name: "Luciana Teixeira",
       position: "Sócia Administradora",
       company: "LTX Engenharia",
-      quote: "Sempre achei que pagar tributo era simples. Descobri, com a FiscALL, que eu estava pagando mais do que devia há anos. Em menos de 90 dias, eles conseguiram recuperar valores que cobriram nosso fluxo de caixa de um trimestre."
+      quote: "Sempre achei que pagar tributo era simples. Descobri, com a Câmara e Melo Advogados Associados, que eu estava pagando mais do que devia há anos. Em menos de 90 dias, eles conseguiram recuperar valores que cobriram nosso fluxo de caixa de um trimestre."
     }
   ];
 

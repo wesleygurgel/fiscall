@@ -124,7 +124,7 @@ export default function Hero() {
                   <div className="relative overflow-hidden rounded-xl aspect-[4/3] w-full max-w-lg">
                     <img 
                       src="https://images.unsplash.com/photo-1585468274952-66591eb14165?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                      alt="Equipe de especialistas FiscALL" 
+                      alt="Equipe de especialistas Câmara e Melo Advogados Associados" 
                       className="w-full h-full object-cover"
                     />
 

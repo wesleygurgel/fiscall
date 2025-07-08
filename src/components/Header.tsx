@@ -1,4 +1,4 @@
-import { Home, Info, Menu, X, BookOpen, Scale, Shield } from 'lucide-react';
+import { Home, Info, Menu, X, Scale, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -40,7 +40,7 @@ export default function Header() {
     { href: '/', label: 'Home', icon: <Home className="w-5 h-5" />, sectionId: 'top' },
     { href: '/#about', label: 'Quem Somos', icon: <Info className="w-5 h-5" />, sectionId: 'about' },
     { href: '/#solution', label: 'Nossa Solução', icon: <Scale className="w-5 h-5" />, sectionId: 'solution' },
-    { href: '/#testimonials', label: 'Depoimentos', icon: <BookOpen className="w-5 h-5" />, sectionId: 'testimonials' },
+    // { href: '/#testimonials', label: 'Depoimentos', icon: <BookOpen className="w-5 h-5" />, sectionId: 'testimonials' },
   ];
 
   return (

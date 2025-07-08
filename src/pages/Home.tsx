@@ -7,7 +7,7 @@ import BenefitsSection from '../components/BenefitsSection';
 import ComplementaryServicesSection from '../components/ComplementaryServicesSection';
 import DifferentialsSection from '../components/DifferentialsSection';
 import ContactSection from '../components/ContactSection';
-import TestimonialsSection from '../components/TestimonialsSection';
+// import TestimonialsSection from '../components/TestimonialsSection';
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
       <DifferentialsSection />
 
       {/* Testimonials Section */}
-      <TestimonialsSection />
+      {/*<TestimonialsSection />*/}
 
       {/* Contact Section */}
       <ContactSection />

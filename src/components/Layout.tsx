@@ -61,16 +61,6 @@ export default function Layout({ children }: LayoutProps) {
               <p className="text-sm text-gray-300 mb-4 md:mb-0">
                 &copy; {new Date().getFullYear()} FiscALL - Inteligência Tributária. Todos os direitos reservados.
               </p>
-              <p className="text-sm text-gray-300">
-                Desenvolvido por <a 
-                  href="https://www.linkedin.com/in/wesleygurgel/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gold-300 hover:text-gold-200 transition-colors"
-                >
-                  Wesley Gurgel
-                </a>
-              </p>
             </div>
           </div>
         </div>

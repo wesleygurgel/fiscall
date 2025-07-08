@@ -6,7 +6,6 @@ import RecoverableTaxesSection from '../components/RecoverableTaxesSection';
 import BenefitsSection from '../components/BenefitsSection';
 import ComplementaryServicesSection from '../components/ComplementaryServicesSection';
 import DifferentialsSection from '../components/DifferentialsSection';
-import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 
 export default function Home() {

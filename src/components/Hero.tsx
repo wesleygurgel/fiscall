@@ -2,6 +2,14 @@ import { motion } from 'framer-motion';
 import { Scale, Shield, FileText, TrendingUp, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
+  // Function to handle smooth scrolling to sections
+  const scrollToSection = (sectionId: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 overflow-hidden">
       {/* Background pattern */}
@@ -52,6 +60,7 @@ export default function Hero() {
               >
                 <a 
                   href="#contact" 
+                  onClick={scrollToSection('contact')}
                   className="px-8 py-3.5 rounded-lg bg-gold-500 text-white font-medium hover:bg-gold-600 transition-all duration-300 shadow-lg hover:shadow-gold-500/20 flex items-center justify-center"
                 >
                   Solicitar Consultoria
@@ -59,6 +68,7 @@ export default function Hero() {
                 </a>
                 <a 
                   href="#solution" 
+                  onClick={scrollToSection('solution')}
                   className="px-8 py-3.5 rounded-lg bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 transition-all duration-300"
                 >
                   Nossas Soluções

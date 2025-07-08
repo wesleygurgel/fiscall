@@ -26,14 +26,18 @@ export default function Header() {
   // Function to handle smooth scrolling to sections
   const scrollToSection = (sectionId: string) => (e: React.MouseEvent) => {
     e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (sectionId === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
   const navItems = [
-    { href: '/', label: 'Home', icon: <Home className="w-5 h-5" />, sectionId: '' },
+    { href: '/', label: 'Home', icon: <Home className="w-5 h-5" />, sectionId: 'top' },
     { href: '/#about', label: 'Quem Somos', icon: <Info className="w-5 h-5" />, sectionId: 'about' },
     { href: '/#solution', label: 'Nossa Solução', icon: <Scale className="w-5 h-5" />, sectionId: 'solution' },
     { href: '/#testimonials', label: 'Depoimentos', icon: <BookOpen className="w-5 h-5" />, sectionId: 'testimonials' },
@@ -52,7 +56,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <a href="/" className="flex-shrink-0 flex items-center">
+              <a href="/" onClick={scrollToSection('top')} className="flex-shrink-0 flex items-center">
                 <div className="flex items-center">
                   <Scale className={`w-8 h-8 ${scrolled ? 'text-primary-600' : 'text-gold-400'} mr-2`} />
                   <div className="flex flex-col">

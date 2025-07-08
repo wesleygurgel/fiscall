@@ -32,8 +32,8 @@ export default function AboutSection() {
               </p>
 
               <div className="bg-white bg-opacity-50 p-4 rounded-md mb-6 border-l-2 border-gold-400">
-                <p className="text-gray-800 italic">
-                  "Nosso propósito é garantir que os contribuintes cumpram suas obrigações fiscais de forma <span className="text-primary-600 font-medium">justa e eficiente</span>, evitando pagamentos excessivos e assegurando o pleno aproveitamento dos direitos creditórios previstos na legislação."
+                <p className="text-gray-800">
+                  Nosso propósito é garantir que os contribuintes cumpram suas obrigações fiscais de forma <span className="text-primary-600 font-medium">justa e eficiente</span>, evitando pagamentos excessivos e assegurando o pleno aproveitamento dos direitos creditórios previstos na legislação.
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export default function AboutSection() {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Propósito</h3>
             <p className="text-gray-600">
-              "Atuar com justiça fiscal, eficiência técnica e segurança jurídica"
+              Atuar com justiça fiscal, eficiência técnica e segurança jurídica
             </p>
           </motion.div>
 

@@ -33,7 +33,7 @@ export default function ProblemSection() {
         >
           <div className="bg-primary-800 p-8 rounded-lg shadow-xl">
             <h3 className="text-3xl font-bold text-white mb-0 font-serif leading-tight">
-              "O sistema tributário brasileiro é complexo — e isso gera pagamentos indevidos"
+              O sistema tributário brasileiro é complexo — e isso gera pagamentos indevidos
             </h3>
           </div>
         </motion.div>

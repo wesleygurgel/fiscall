@@ -4,7 +4,7 @@ import qrCodeImage from '../assets/images/frame.png';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-gray-50 overflow-hidden">
+    <section id="contact" className="py-20 bg-white overflow-hidden">
       <div className="container-responsive">
         <div className="text-center mb-12">
           <motion.h2 

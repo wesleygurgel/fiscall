@@ -37,7 +37,7 @@ export default function Home() {
       <DifferentialsSection />
 
       {/* Testimonials Section */}
-      <TestimonialsSection />
+      {/*<TestimonialsSection />*/}
 
       {/* Contact Section */}
       <ContactSection />
